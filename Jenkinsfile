@@ -9,6 +9,8 @@ pipeline {
     stage("build") {
       steps{
         echo "building"
+        arch
+        cat /etc/os-release
       }
     }
     stage("test & deploy") {
